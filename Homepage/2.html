@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head >
+    <link rel="stylesheet" href="12.css">
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>AgentPino</title>
+    
+</head>
+<body>
+    <div id="header">
+            <ul id="menu">
+                    <li><a href="1.html" target="_blank"><strong>Tour Guidence</strong></a></li>
+                    <li><a href="1.html" target="_blank"><strong>Room Reservation</strong></a></li>
+                    <li><a href="1.html" target="_blank"><strong>Adventure Experience</strong></a></li>
+                    <li><a href="1.html" target="_blank"><strong>Gallery</strong></a></li>
+                    <li><a href="1.html" target="_blank"><strong>Tour Packages</strong></a></li>
+                    <li><a href="1.html" target="_blank"><strong>Booking</strong></a></li>
+                </ul> 
+        </div>
+        <div class="slideshow-container">
+
+                <div class="mySlides fade">
+                  <div class="numbertext">1 / 3</div>
+                  <img src="WHA_brittneyrossie.jpg" style="width:100%">
+                  <div class="text">Hortain Plains Campign</div>
+                </div>
+                
+                <div class="mySlides fade">
+                  <div class="numbertext">2 / 3</div>
+                  <img src="WHA_melly_crater_lake.jpg" style="width:100%">
+                  <div class="text">Babara Kanda </div>
+                </div>
+                
+                <div class="mySlides fade">
+                  <div class="numbertext">3 / 3</div>
+                  <img src="WHA_Saud-Ilyas.jpg" style="width:100%">
+                  <div class="text">Chineese Lantans</div>
+                </div>
+                
+                <a class="prev" onclick="plusSlides(-1)">❮</a>
+                <a class="next" onclick="plusSlides(1)">❯</a>
+                
+                </div>
+                <br>
+                
+                <div style="text-align:center">
+                  <span class="dot" onclick="currentSlide(1)"></span> 
+                  <span class="dot" onclick="currentSlide(2)"></span> 
+                  <span class="dot" onclick="currentSlide(3)"></span> 
+                </div>
+                <script>
+                        var slideIndex = 1;
+                        showSlides(slideIndex);
+                        
+                        function plusSlides(n) {
+                          showSlides(slideIndex += n);
+                        }
+                        
+                        function currentSlide(n) {
+                          showSlides(slideIndex = n);
+                        }
+                        
+                        function showSlides(n) {
+                          var i;
+                          var slides = document.getElementsByClassName("mySlides");
+                          var dots = document.getElementsByClassName("dot");
+                          if (n > slides.length) {slideIndex = 1}    
+                          if (n < 1) {slideIndex = slides.length} ;
+                          for (i = 0; i < slides.length; i++) {
+                             slides[i].style.display = "none";  
+                          }
+                          for (i = 0; i < dots.length; i++) {
+                             dots[i].classList.remove("active");
+                          }
+                          slides[slideIndex-1].style.display = "block";  
+                          dots[slideIndex-1].classList.add("active");
+                        }
+                        </script>
+                
+       <!-- <div id="nav">
+            Packages<br>
+            Gallery<br>
+            Adventure<br>
+        </div>
+    <div id="section">
+        <h1>Services</h1>
+        <p>THis is the very famous agent in sri lanaka.You are warmly welcome to<br> the Our Home page In agent pino.<br>There are severala type
+          of Packagesfpr your choice</p>
+          <p>
+              The term ‘Ergonomics’ as well as industrial applications of ergonomics came into being in 
+          about1950followingtheex<br>amplesofmilitary about 1950, <br>following the examples of military applications. </p>
+          </div> -->
+          <div id="footer">
+              copyright @ SithumRavishara 2018.
+              </div>
+
+
+</body>
+</html>
