@@ -16,7 +16,7 @@ address.error{
     padding:0px;   }
 #section {  width:350px;padding: 10px;float: left;  }
 #footer {   text-align: center;background-color:black;color: whitesmoke;padding: 5px;clear: both;  }
-ul#menu { padding: 0px; box-shadow: none; text-align: left;  transition: none} }
+ul#menu { padding: 0px; box-shadow: none; text-align: left;  transition: none} 
   ul#menu li{display: inline;}
   ul#menu li a{ background-color:orangered;
     color: rgb(252, 252, 252);
