@@ -1,0 +1,453 @@
+body, html{
+	margin: 0;
+	padding: 0;
+	font: 1em Roboto;
+}
+header{
+	width: 100%;
+	height: 100vh;
+	background: url(tajmahal.jpg);
+	background-size: 100% 100%;
+	background-position: center center;
+	background-attachment: fixed;
+}
+nav{
+	width: 100%;
+	height: auto;
+	color: #fff;
+	z-index: 999;
+}
+*{margin:0;padding:0px;}
+#wrapper{
+	text-align: center;
+	width: 100%;
+}
+#animated_div{
+	width: 100%;
+	height: 100%;
+	background: url(11.jpg);
+	background-size: 100% 100%;
+	animation: 60s linear infinite;
+
+}
+@keyframes animatebackground{
+from{background-position: 1px 0;}
+to{ background-position: -1000px 0;}
+
+}
+/*//////////////////////////lower navbar\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
+.lower_navbar{
+	width: 100%;
+	height: 70px;
+	color: #fff;
+	background-color: rgba(0,0,0,0.7);
+}
+.lower_navbar_content{
+	width: 90%;
+	margin: 0 auto;
+}
+.lower_navbar .logo{
+	float: left;
+	height: 50px;
+	padding: 10px 0px;
+}
+.lower_navbar .logo img{
+	width: 60%;
+}
+.lower_navbar ul{
+	float: right;
+	padding: 0;
+	margin: 0;
+	display: inline-flex;
+}
+.lower_navbar ul li{
+	list-style-type: none;
+	display: inline-block;
+	line-height: 70px;
+	font-size: 11pt;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
+.lower_navbar ul li a{
+	color: #fff;
+	text-decoration: none;
+	padding: 25px 20px;
+}
+.lower_navbar ul li:hover{
+	background-color:#444;
+	transition: 0.3s;
+}
+.nav-content{
+	position: absolute;
+	top: 112px;
+	overflow: hidden;
+	background-color: #111;
+	max-height: 0;
+}
+.nav-sub ul{
+	padding: 0;
+	margin: 0;
+	list-style-type: none;
+	display: block;
+}
+.nav-sub ul li{
+	display: block;
+	line-height: 50px;
+	padding: 0 20px;
+	height: 50px;
+	font-size: 11pt;
+	text-transform: none;
+}
+.nav-sub ul li a{
+	display: inline-block;
+	padding:0;
+}
+.lower_navbar ul li a:focus{
+	background-color: #444;
+}
+.lower_navbar ul li a:focus ~ .nav-content{
+	max-height: 400px;
+	transition: max-height 0.4s ease-in;
+}
+.fas{
+	padding-left: 8px;
+}
+
+/*/////////////////////////////image set\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
+.image-set{
+	width: 90%;
+	margin: 70px auto;
+	position:absolute;
+	top: 50%;
+	left:5%; 
+	
+}
+.image-set .image-box{
+	
+	position: relative;
+	text-align: center;
+	display: inline-flex;
+}
+.image-set img{
+	width: 300px;
+	height: auto;
+}
+.image-set .image-box .image-content{
+	position: absolute;
+	overflow: hidden;
+	bottom: 1%;
+	left: 0;
+	right: 0;
+	width: 100%;
+	height: 0%;
+	transition: .5s ease;
+
+}
+.image-set .image-box .image-content .text{
+	position: absolute;
+	text-transform: uppercase;
+	background: rgba(0,0,0,0.7);
+	width: 100%;
+	height: auto;
+	text-align: center;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+}
+.image-set .image-box .image-content .text a{
+	text-decoration: none;
+}
+.image-set .image-box .image-content .text h1{
+	color: #fff;
+	font-family: Nunito;
+	font-size: 50px;
+}
+.image-set .image-box:hover .image-content{
+	cursor: pointer;
+	height: 25%;
+	transition: 0.5s;
+}
+/*////////////////////Welcome to Idunil Tours\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
+.top-attractions{
+	width: 100%;
+	height: auto;
+	
+	background-position: center center;
+	background-attachment: fixed;
+}
+.top-attractions-back{
+	width: 100%;
+	background: rgb(212, 214, 210);
+}
+.top-attractions-content{
+	width: 90%;
+	margin: 0 auto;
+	padding: 0px 0 40px 0;
+}
+.attractions-topic{
+	width: 60%;
+	margin: 0 auto;
+	padding: 15px 0;
+	background: #06a809;
+	border-radius: 0 0 50px 50px;
+	box-shadow: 5px 5px 10px rgba(0,0,0,0.7);
+}
+.attractions-topic h1{
+	font-family: Nunito;
+	font-size: 50px;
+	color: #fff;
+	text-align: center;
+	letter-spacing: 2px;
+	margin: 0;
+}
+.sinharaja{
+	padding: 20px;
+	border-left: 5px dashed rgb(26, 223, 8);
+	border-right: 5px dashed rgb(26, 223, 8);
+	
+	
+}
+.sri-padaya{
+	padding: 20px;
+	
+}
+.sinharaja-content h3, .sri-padaya-content h3{
+	color: rgb(0, 0, 0);
+	font-family: Nunito;
+	letter-spacing: 1px;
+}
+.sinharaja-content, .sri-padaya-content{
+	width: 100%;
+	display: inline-flex;
+}
+.sinharaja-para, .sri-padaya-para{
+	width: 65%;
+}
+.sinharaja-para p, .sri-padaya-para p{
+	font-size: 18px;
+	font-family: Nunito;
+	color: rgb(37, 35, 35);
+}
+.sinharaja-para a, .sri-padaya-para a{
+	color: rgb(0, 0, 0);
+	background: #6bf442;
+	font-size: 17px;
+	text-decoration: none;
+	padding: 5px 10px;
+	border: 2px solid #fff;
+	border-radius: 15px 0 15px 0; 
+	transition: 0.4s;
+}
+.sinharaja-para a:hover, .sri-padaya-para a:hover{
+	background: rgb(50, 223, 6);
+	color: #000;
+
+}
+.sri-padaya-para p a{
+	text-align:left;
+	position: relative;
+	
+}
+.sinharaja-image{
+	width: 32%;
+	padding: 10px 0px 0px 25px;
+}
+.sri-padaya-image{
+	width: 30%;
+	padding: 20px 25px 0px 0px;
+	
+}
+.sinharaja-image img, .sri-padaya-image img{
+	width: 100%;
+	box-shadow: 5px 5px 10px rgba(0,0,0,0.6);
+	transition: 0.4s;
+	background-color: rgb(255, 254, 254);
+	
+}
+.sinharaja-image img:hover{
+	transform: rotate(-4deg);
+}
+.sri-padaya-image img:hover{
+	transform: rotate(4deg);
+}
+.vertical-divider1{
+	margin: 50px 830px 0px 0px;
+	border-top: 5px dashed rgb(0, 0, 0);
+}
+.vertical-divider2{
+	margin: 0px 0px 0px 830px;
+	border-top: 5px dashed rgb(0, 0, 0);
+}
+/*///////////////////////////slider part and trip booking part\\\\\\\\\\\*/
+.main-access{
+	width: 100%;
+	height: auto;
+	background: url(jo.jpg);
+	background-position: center center;
+	background-attachment: fixed;
+}
+.access-section{
+	width: 90%;
+	margin: 0px auto;
+	display: flex;
+}
+.tourism-news-carousal-div{
+	width: 60%;
+	margin: 0;
+	padding: 0;
+}
+#slider-title h1, #accommodation-title h1{
+	font-family: Roboto;
+	font-weight: 500;
+	margin:5px;
+	text-align: center; 
+}
+#slider-title span, #accommodation-title span{
+	font-weight: 700;
+}
+#slider{
+	width: 100%;
+	margin: 20px;
+	overflow: hidden;
+}
+#slider figure{
+	width: 400%;
+	position: relative;
+	margin: 0;
+	left: 0;
+	-webkit-animation: 20s slider infinite;
+	-moz-animation: 20s slider infinite;
+	animation: 20s slider infinite;
+}
+#slider figure img{
+	width: 25%;
+	float: left;
+}
+@keyframes slider{
+	0%{
+		left: 0%;
+	}
+	20%{
+		left: 0%;
+	}
+	25%{
+		left: -100%;
+	}
+	45%{
+		left: -100%;
+	}
+	50%{
+		left: -200%;
+	}
+	70%{
+		left: -200%;
+	}
+	75%{
+		left: -300%;
+	}
+	95%{
+		left: -300%;
+	}
+	100%{
+		left: -400%;
+	}
+}
+.book-accommodation-div{
+	width: 40%;
+	margin: 0;
+	padding: 0 50px;
+}
+.accommondation-content{
+	position: absolute;
+	top: 10px;
+
+
+
+}
+.fa-plus{
+	margin-right: 20px;
+}
+button.collapse{
+	width: 100%;
+	border: none;
+	outline: none;
+	font-family: Nunito;
+	font-size: 18px;
+	margin: 0;
+	padding: 10px 20px;
+	text-align: left;
+	background: #ddd;
+	cursor: pointer;
+	transition: background 0.2s linear;
+}
+button.collapse::after{
+	content: '\f067';
+	font-family: "fontawesome";
+	font-size: 17px;
+	padding: 5px 20px 5px 0;
+	float: left;
+}
+button.collapse.active::after{
+	content: '\f068';
+}
+button.collapse:hover, button.collapse.active{
+	background: #adadad;
+}
+.collapse-content{
+	padding: 0 20px;
+	line-height: 30px;
+	border-left: 2px solid #eee; 
+	border-right: 2px solid #eee;
+	border-bottom: 2px solid #eee;
+	max-height: 0;
+	overflow: hidden;
+	background: whitesmoke;
+	transition: max-height 0.2s ease-in-out;
+}
+.footer{
+	background: #112233;
+}
+.footer-content{
+	width: 90%;
+	margin: 0 auto;
+	padding: 20px 0;
+}
+.footer-refs-content-1 h5, .footer-refs-content-2 h5, .footer-refs-content-3 h5{
+	font-family: Roboto;
+	font-weight: 100;
+	font-size: 23px;
+	color: whitesmoke;
+	margin: 10px 15px 25px 10px;
+}
+.footer-refs-content-1 h5 b, .footer-refs-content-2 h5 b, .footer-refs-content-3 h5 b{
+	font-weight: 700;
+}
+.footer-refs-content-1 ul, .footer-refs-content-2 ul, .footer-refs-content-3 ul{
+	list-style-type: none;
+	padding: 0px;
+	margin: 0;
+}
+.footer-refs-content-1 ul li a, .footer-refs-content-2 ul li a, .footer-refs-content-3 ul li a{
+	color: whitesmoke;
+	font-size: 15px;
+	text-decoration: none;
+	padding: 10px;
+}
+.footer-refs-content-1 ul li a:hover, .footer-refs-content-2 ul li a:hover, .footer-refs-content-3 ul li a:hover{
+	color: #42b3f4;
+	transition: 0.1s;
+}
+.footer-content{
+	display: flex;
+}
+.footer-refs-content-1{
+	width: 45%;
+}
+.footer-refs-content-2{
+	width: 35%;
+}
+.footer-refs-content-3{
+	width: 20%;
+}
